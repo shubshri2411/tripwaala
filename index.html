@@ -13,7 +13,7 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
-/* ── DARK MODE (default) ── */
+/*  DARK MODE (default)  */
 :root{
   --bg:#0a0a0f;
   --bg2:#111118;
@@ -39,10 +39,10 @@
   --itin-line:rgba(255,255,255,0.12);
   --itin-dot-border:#0a0a0f;
   --toggle-bg:#18181f;
-  --toggle-icon:☀️;
+  --toggle-icon:"sun";
 }
 
-/* ── LIGHT MODE ── */
+/*  LIGHT MODE  */
 .light{
   --bg:#f5f7fa;
   --bg2:#ffffff;
@@ -68,7 +68,7 @@
   --itin-line:rgba(0,0,0,0.1);
   --itin-dot-border:#f5f7fa;
   --toggle-bg:#e8ecf2;
-  --toggle-icon:🌙;
+  --toggle-icon:"moon";
 }
 
 html,body{height:100%;background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);overflow-x:hidden;transition:background 0.3s,color 0.3s}
@@ -120,7 +120,7 @@ input:focus,textarea:focus{outline:none}
 .sync-ok{background:var(--accent-bg);color:var(--accent);font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px}
 .sync-ing{background:var(--accent-bg);color:var(--accent);font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;animation:pulse 1s ease-in-out infinite}
 .per-head{margin-top:12px;background:rgba(52,211,153,0.08);border:1px solid rgba(52,211,153,0.2);border-radius:12px;padding:10px 14px;font-size:13px;font-weight:800;color:var(--green)}
-/* ── Vault ── */
+/*  Vault  */
 .doc-cat-pill{padding:6px 14px;border-radius:20px;font-size:12px;font-weight:800;border:1.5px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;white-space:nowrap;transition:all 0.15s}
 .doc-cat-pill.active{background:var(--accent);border-color:var(--accent);color:#fff}
 .doc-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px;margin-bottom:10px;animation:pop 0.2s ease;cursor:pointer;width:100%;text-align:left;color:var(--text);box-shadow:var(--shadow)}
@@ -134,11 +134,11 @@ input:focus,textarea:focus{outline:none}
 .cat-btn{padding:14px;border-radius:14px;border:2px solid var(--border);background:var(--inp-bg);color:var(--text);font-size:13px;font-weight:800;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.15s}
 .cat-btn.sel{border-color:var(--accent);background:var(--accent-bg);color:var(--accent)}
 .file-chip{display:flex;align-items:center;gap:10px;background:var(--inp-bg);border:1px solid var(--border);border-radius:12px;padding:10px 14px;margin-bottom:8px}
-/* ── Notes ── */
+/*  Notes  */
 textarea{font-family:'Nunito',sans-serif;color:var(--text)}
 textarea::placeholder{color:var(--placeholder)}
 textarea:focus{outline:none;border-color:var(--accent)!important}
-/* ── Itinerary ── */
+/*  Itinerary  */
 .itin-timeline{position:relative;padding-left:22px}
 .itin-timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--itin-line)}
 .itin-block{position:relative;margin-bottom:10px;animation:pop 0.2s ease}
@@ -151,7 +151,7 @@ textarea:focus{outline:none;border-color:var(--accent)!important}
 .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .type-opt{padding:12px 6px;border-radius:14px;border:2px solid var(--border);background:var(--inp-bg);display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;font-size:11px;font-weight:800;color:var(--muted)}
 .type-opt.sel{border-color:currentColor}
-/* ── Theme toggle button ── */
+/*  Theme toggle button  */
 .theme-toggle{background:var(--toggle-bg);border:1px solid var(--border);border-radius:20px;padding:6px 12px;font-size:16px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:4px;color:var(--text);font-weight:700;font-size:12px}
 .theme-toggle:hover{background:var(--surface2)}
 </style>
